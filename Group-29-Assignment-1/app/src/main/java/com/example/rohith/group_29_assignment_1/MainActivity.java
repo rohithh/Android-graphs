@@ -86,6 +86,10 @@ public class MainActivity extends AppCompatActivity {
             series.appendData(new DataPoint(lastX,arr[count++%1800]), true, 200);
             line.appendData(new DataPoint(lastX,5),true,200);
         }
+        else{
+            line.appendData(new DataPoint(lastX,5),true,200);
+            series.appendData(new DataPoint(lastX,5), true, 200);
+        }
     }
 
 
